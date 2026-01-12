@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <title>อาร์ตเวิร์กวังนารายณ์</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h2>อาร์ตเวิร์กวังนารายณ์</h2>
+  <p>สร้างผลงานจากเรื่องราวในอดีต</p>
+
+  <canvas id="canvas" width="320" height="420"></canvas>
+
+  <div class="tools">
+    สี <input type="color" id="color" value="#000000">
+    ขนาด <input type="range" id="size" min="1" max="20" value="5"><br>
+
+    <button onclick="addSticker('⭐')">⭐</button>
+    <button onclick="addSticker('🏛️')">🏛️</button>
+    <button onclick="addSticker('🌸')">🌸</button>
+    <button onclick="addSticker('☕')">☕</button>
+    <br>
+
+    <input type="file" id="imgUpload" accept="image/*">
+    <br>
+
+    <button onclick="clearCanvas()">ล้างภาพ</button>
+    <button onclick="saveImage()">บันทึกผลงาน</button>
+  </div>
+
+  <p>ความรู้สึกหลังทำกิจกรรม</p>
+  <textarea id="feeling"></textarea>
+
+  <p>ความรู้ที่ได้รับ</p>
+  <textarea id="knowledge"></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>

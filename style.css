@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+canvas {
+  border: 1px solid #333;
+  background: #fff;
+  touch-action: none;
+}
+
+.tools {
+  margin: 8px;
+}
+
+input,
+button {
+  margin: 4px;
+  padding: 6px;
+}
+
+textarea {
+  width: 90%;
+  height: 60px;
+  margin-top: 6px;
+}
